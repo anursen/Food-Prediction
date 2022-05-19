@@ -9,14 +9,14 @@ from skimage import io
 
 
 st.text('Welcome')
-st.text('Please upload your Amazon data')
+st.text('Please upload your your picture.')
 #st.sidebar.subheader("yan kol")
 
 try:
-    uploaded_file = st.file_uploader(label = 'Upload Your File', type = ['csv', 'xlsx'])
+    uploaded_file = st.file_uploader(label = 'Upload Your File', type = ['png', 'jpg'])
 
 
-    cake_url = path
+    cake_url = uploaded_file
 labelmap_url = "https://www.gstatic.com/aihub/tfhub/labelmaps/aiy_food_V1_labelmap.csv"
 input_shape = (224, 224)
 
